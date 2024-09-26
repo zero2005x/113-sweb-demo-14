@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(217,234,219);
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #ff69a6;
+    border-radius: 50%;
+    opacity: 0.5;
+}
