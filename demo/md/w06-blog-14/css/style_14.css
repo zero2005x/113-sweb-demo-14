@@ -79,8 +79,40 @@ body{
     color: var(--grey-dark);
     text-transform: capitalize;
     letter-spacing: 1px;
-    font-size: 1rem;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: var(--transition);
+    
+}
+
+@media screen and (min-width: 550px){
+    .blogs-center{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media screen and (min-width: 800px){
+    .blogs-center{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+/* 4 blogs per row */
+@media (min-width: 1200px) {
+    .blogs-center {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 5 blogs per row */
+@media (min-width: 1500px) {
+    .blogs-center {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* 6 blogs per row */
+@media (min-width: 1800px) {
+    .blogs-center {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

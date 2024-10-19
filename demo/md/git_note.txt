@@ -8,4 +8,4 @@ git commit -m "W02-P1: Collaborate your Github repo to htchung@gms.tku.edu.tw an
 git push
 
 ## 顯示現有的上傳紀錄
- git log --pretty-format:"%h%09%an%09%ad%x09%s"  --after="2024-09-18"  
+git log --pretty=format:"%h%09%an%09%ad%x09%s" --after="2024-10-16"    
