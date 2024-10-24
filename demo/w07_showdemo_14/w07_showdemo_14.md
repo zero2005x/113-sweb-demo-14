@@ -30,7 +30,9 @@ d585bff%09zero2005x%09Thu Oct 24 19:17:10 2024 +0800    W07-P2: W07-P2: Redo W06
 
 ![](./images/w07_p3-2.png)
 
-
+```
+d585bff%09zero2005x%09Thu Oct 24 19:17:10 2024 +0800    W07-P2: W07-P2: Redo W06-P4 with breakpoints being cancelled
+```
 
 #### => To create index.html as root home page and have a link to class demo navigation as done in w07
 
