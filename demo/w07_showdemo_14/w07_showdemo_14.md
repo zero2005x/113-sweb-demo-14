@@ -37,3 +37,7 @@ d585bff%09zero2005x%09Thu Oct 24 19:17:10 2024 +0800    W07-P2: W07-P2: Redo W06
 #### => To create index.html as root home page and have a link to class demo navigation as done in w07
 
 ![](./images/w07_p3-3.png)
+
+```
+6b90ff2%09zero2005x%09Thu Oct 24 20:07:56 2024 +0800    modified the root index.html's link to w07 3rd
+```
