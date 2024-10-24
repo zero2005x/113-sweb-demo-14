@@ -41,3 +41,19 @@ d585bff%09zero2005x%09Thu Oct 24 19:17:10 2024 +0800    W07-P2: W07-P2: Redo W06
 ```
 6b90ff2%09zero2005x%09Thu Oct 24 20:07:56 2024 +0800    modified the root index.html's link to w07 3rd
 ```
+
+
+### W07-P4 Create navar with links to class demo w02, w03, w06, and deploy it to Vercel
+
+### => local
+
+![](./images/w07_p4-1.png)
+### => Vercel
+![](./images/w07_p4-2.png)
+
+
+### W07-P5: Git logs of W07
+
+```
+
+```
