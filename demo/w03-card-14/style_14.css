@@ -1,3 +1,7 @@
+/**
+ * Global body styles
+ * Sets up a centered, column-based flex container with a light green background
+ */
 body {
     background-color: rgb(217,234,219);
     display: flex;
@@ -9,6 +13,10 @@ body {
     box-sizing: border-box;
 }
 
+/**
+ * Card component base styles
+ * Creates a flexible container for card content with consistent spacing and shadow
+ */
 .card {
     display: flex;
     flex-direction: column;
@@ -23,14 +31,22 @@ body {
     text-align: center;
 }
 
+/**
+ * Card variants
+ * Defines specific border colors for different card types
+ */
 .card-1 {
-    border: 2px solid rgba(255, 105, 166, 0.8);
+    border: 2px solid rgba(255, 105, 166, 0.8); /* Pink border */
 }
 
 .card-2 {
-    border: 2px solid rgba(105, 163, 255, 0.7);
+    border: 2px solid rgba(105, 163, 255, 0.7); /* Blue border */
 }
 
+/**
+ * Icon styles
+ * Creates circular icons with semi-transparent appearance
+ */
 .icon {
     width: 60px;
     height: 60px;
@@ -39,14 +55,19 @@ body {
     opacity: 0.5;
 }
 
+/* Card-specific icon colors */
 .card-1 .icon {
-    background-color: #ff69a6;
+    background-color: #ff69a6; /* Pink icon */
 }
 
 .card-2 .icon {
-    background-color: #69a3ff;
+    background-color: #69a3ff; /* Blue icon */
 }
 
+/**
+ * Image styles
+ * Ensures consistent image sizing and appearance within cards
+ */
 .img {
     width: 100%;
     height: 200px;
@@ -55,6 +76,10 @@ body {
     margin-bottom: 10px;
 }
 
+/**
+ * Typography styles
+ * Defines text hierarchy and spacing for card content
+ */
 h2 {
     margin: 10px 0;
     font-size: 1.5rem;
@@ -71,6 +96,10 @@ p {
     font-size: 0.9rem;
 }
 
+/**
+ * Button base styles
+ * Defines common button properties and hover interactions
+ */
 .btn {
     font-size: 0.8rem;
     font-weight: 700;
@@ -83,11 +112,25 @@ p {
     margin-top: 10px;
 }
 
+/**
+ * Button variants
+ * Defines specific colors for different button types
+ */
 .btn-1 {
     color: #000;
-    background-color: rgba(255, 105, 166, 0.5);
+    background-color: rgba(255, 105, 166, 0.5); /* Semi-transparent pink */
 }
 
 .btn-2 {
     color: #000;
-    background-
+    background-color: rgba(105, 163, 255, 0.5); /* Semi-transparent blue */
+}
+
+/**
+ * Button hover effect
+ * Changes button appearance on mouse hover
+ */
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}

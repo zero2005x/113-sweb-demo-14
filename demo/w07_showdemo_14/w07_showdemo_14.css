@@ -1,9 +1,11 @@
+/* Reset default styles for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base body styles */
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -12,10 +14,12 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
+/* Remove bullet points from list items */
 li {
   list-style-type: none;
 }
 
+/* Main navigation container styles */
 .nav {
   display: flex;
   align-items: center;
@@ -24,6 +28,7 @@ li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Center content within navigation */
 .nav-center {
   display: flex;
   width: 100%;
@@ -31,11 +36,13 @@ li {
   align-items: center;
 }
 
+/* Navigation header text styles */
 .nav-header h4 {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Navigation links container layout */
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -43,12 +50,14 @@ li {
   gap: 1.5rem;
 }
 
+/* Individual navigation link styles */
 .nav-links li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   font-size: 0.8rem;
 }
 
+/* Hover effect for navigation links */
 .nav-links li a:hover {
   color: rgba(0, 0, 0, 0.9);
   font-weight: 500;
@@ -56,8 +65,9 @@ li {
   padding-bottom: 3px;
 }
 
+/* Demo content display area */
 .show-classdemo {
   width: 100%;
-  height: 90vh;
+  height: 90vh; /* Takes up 90% of viewport height */
   background-color: rgba(152, 230, 230, 0.5);
 }

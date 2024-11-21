@@ -1,45 +1,52 @@
+/* Reset default browser styles and set base font */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC', sans-serif;
-    background-color: #fdfdfd;
+    background-color: #fdfdfd;  /* Light background color */
 }
 
+/* Main container styling */
 .container {
-    width: 80%;
-    margin: 1% auto;
+    width: 80%;  /* Container takes 80% of viewport width */
+    margin: 1% auto;  /* Center container with auto margins */
     padding: 30px;
-    border: 2px solid purple;
-    background-color: #f8f9fa;
+    border: 2px solid purple;  /* Purple border around container */
+    background-color: #f8f9fa;  /* Light gray background */
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center child elements horizontally */
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;  /* Center children horizontally */
 }
 
+/* Profile image styling */
 .avatars {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: center;  /* Center the image */
+    margin: 20px 0;  /* Add vertical spacing */
 }
 
+/* Student ID styling */
 .studentID {
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.5em;  /* Larger text size */
+    color: #333;  /* Dark gray text color */
     text-align: center;
 }
 
+/* Name styling */
 .MyName {
     font-size: 1.5em;
     color: #333;
     text-align: center;
 }
 
+/* Self introduction paragraph styling */
 .self_introduction {
     font-size: 1.5em;
     color: #333;
     text-align: center;
 }
 
+/* Website link styling */
 .webLink {
     font-size: 1.5em;
     color: #333;

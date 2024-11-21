@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,17 @@
 </head>
 
 <body>
+    <!-- Main Navigation Container -->
     <nav class="nav">
+        <!-- Centered Navigation Content -->
         <nav class="nav-center">
+            <!-- Header Section with Student Name -->
             <div class="nav-header">
                 <h4>Class Demo: 林亮廷 (Liang-Ting Lin)</h4>
             </div>
+            <!-- Navigation Links for Different Demo Pages -->
             <ul class="nav-links">
+                <!-- Each link triggers showDemo() function with specific demo parameter -->
                 <li onclick="showDemo('w02_intro_14')">
                     <a href="#">w02_intro_14</a>
                 </li>
@@ -24,12 +28,11 @@
                 <li onclick="showDemo('w06_blog_14')">
                     <a href="#">w06_blog_14</a>
                 </li>
-
             </ul>   
         </nav>
     </nav>
+    <!-- Container for displaying selected demo content -->
     <div class="show-classdemo"></div>
     <script src="w07_showdemo_14.js"></script>
 </body>
-
 </html>
