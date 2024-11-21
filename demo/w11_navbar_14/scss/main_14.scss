@@ -1,0 +1,19 @@
+@import './global';
+
+// navbar
+.nav{
+    background: var(--grey-300);
+    box-shadow: var(--shadow-2);
+    padding: 10px 0;
+    .nav-item{
+        margin: 0 10px;
+        a{
+            color: var(--white);
+            text-decoration: none;
+            &:hover{
+                color: var(--white);
+            }
+        }
+    }
+}
+
