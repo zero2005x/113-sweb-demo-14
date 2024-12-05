@@ -260,6 +260,9 @@ body {
   .image-container {
     grid-template-columns: 1fr 1fr;
   }
+  .nav-links {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {

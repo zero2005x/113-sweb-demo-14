@@ -66,6 +66,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--textColor);
+  padding-top: calc(40px + 2rem);
 }
 
 p {
@@ -503,6 +504,9 @@ body {
 @media screen and (min-width: 640px) {
   .image-container {
     grid-template-columns: 1fr 1fr;
+  }
+  .nav-links {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
