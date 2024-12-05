@@ -243,6 +243,18 @@ ul {
   margin-top: -1rem;
 }
 
+.section-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+.section-title-underline {
+  background: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+
 .nav {
   background: var(--white);
   box-shadow: var(--shadow-2);
@@ -291,52 +303,6 @@ ul {
   padding-left: 1.5rem;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-toggle {
-    display: none;
-  }
-  .nav-center {
-    max-width: var(--max-width);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-  }
-  .nav-links a {
-    padding: 0;
-    margin: 0 0.5rem;
-  }
-  .nav-links a:hover {
-    background: transparent;
-    padding: 0;
-    padding-bottom: 3px;
-    border-bottom: 2px solid purple;
-  }
-  .nav .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0;
-    padding-right: 1rem;
-  }
-  .nav .social-icons a {
-    margin: 0 0.5rem;
-    color: var(--primary-500);
-    font-size: 1.25rem;
-    transition: var(--transition);
-  }
-  .nav .social-icons a:hover {
-    color: var(--primary-300);
-  }
-}
 :root {
   --primary: #645cff;
   --primary-dark: #3c3799;
@@ -542,6 +508,52 @@ body {
 @media screen and (min-width: 768px) {
   .image-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+  }
+  .nav-links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .nav-links a:hover {
+    background: transparent;
+    padding: 0;
+    padding-bottom: 3px;
+    border-bottom: 2px solid purple;
+  }
+  .nav .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+    padding-right: 1rem;
+  }
+  .nav .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--primary-500);
+    font-size: 1.25rem;
+    transition: var(--transition);
+  }
+  .nav .social-icons a:hover {
+    color: var(--primary-300);
   }
 }
 @media screen and (min-width: 1024px) {

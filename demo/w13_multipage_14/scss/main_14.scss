@@ -1,7 +1,6 @@
 @use "./global";
-@use "../css/main_14.css"
 
-// navbar
+
 .nav {
   background: var(--white);
   box-shadow: var(--shadow-2);
@@ -39,7 +38,7 @@
 
   &-links {
     margin: 0;
-    // height: 0;
+    
 
     a {
       color: var(--grey-700);
