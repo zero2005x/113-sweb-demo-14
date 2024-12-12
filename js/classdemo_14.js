@@ -1,5 +1,6 @@
 // Select the container element where demos will be displayed
 const p = document.querySelector(".show-classdemo");
+const q = document.querySelector(".tictactoe");
 console.log("show-classdemo", p);
 
 /**
@@ -24,6 +25,11 @@ function showClassDemo(item) {
     case "w07_nav_14":
       // Load the blog demo page
       p.innerHTML = `<iframe src='./demo/w07_showdemo_14/w07_showdemo_14.html' width="100%" height="100%"></iframe>`;
+      break;
+
+    case "tictoctoe":
+      // Load the blog demo page
+      p.innerHTML = `<iframe src='./tictoctoe_14.html' width="100%" height="100%"></iframe>`;
       break;
 
     default:
