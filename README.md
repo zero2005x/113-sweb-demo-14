@@ -9,3 +9,6 @@ git push
 
 ## 顯示現有的上傳紀錄
 git log --pretty=format:"%h%09%an%09%ad%x09%s" --after="2024-10-16"    
+
+## 監聽scss
+npx sass --watch scss:css  
