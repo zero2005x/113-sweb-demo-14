@@ -1,64 +1,43 @@
 .div_container_14 {
   max-width: 1000px;
-  min-width: 400px;
+  min-width: 450px;
   background-color: #fff;
   width: 80%;
   height: 80vh;
   margin: 0 auto;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 0.6fr 4fr 0.4fr;
   grid-template-areas:
-    "logo"
-    "header"
-    "article"
-    "aside"
-    "footer";
-  gap: 0.2rem;
+    "logo header"
+    "article aside"
+    "footer footer";
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
-
   .logo {
     background-color: #eababa;
     grid-area: logo;
   }
-
   header {
     background-color: bisque;
     grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-
   article {
     background-color: #d18dfd;
     grid-area: article;
-    position: relative;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     .nav {
-      width: 90%;
-      height: 80%;
+      width: 80%;
+      height: 90%;
+      margin: 10px auto;
       background-color: #9cbaf3;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
-
   aside {
     background-color: rgba(232, 235, 72);
     grid-area: aside;
-    padding: 0.5rem;
   }
 
   section {
@@ -68,9 +47,7 @@
     display: flex;
     flex-direction: column;
     background-color: #a4caaf;
-    padding: 1rem;
   }
-
   .video-responsive {
     width: 90%;
     margin: 10px auto;
@@ -87,22 +64,19 @@
     width: 100%;
     position: absolute;
   }
-
   .picContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1rem auto;
-    width: 90%;
+    margin: 0 auto;
 
     .small_pic {
       width: 15%;
-      margin: 5px;
+      margin: 10px;
       cursor: pointer;
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
       }
     }
   }
@@ -112,8 +86,7 @@
     grid-area: footer;
   }
 
-  // Mobile devices (up to 480px)
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     width: 95%;
     min-width: 320px;
     grid-template-columns: 1fr;
@@ -125,55 +98,77 @@
       "aside"
       "footer";
     gap: 0.2rem;
+    padding: 0;
+    height: 100vh; // Adjust to full viewport height
 
-    .picContainer {
-      flex-wrap: wrap;
-      .small_pic {
-        width: 25%;
+    .logo {
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article {
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: column; // Changed to column
+      justify-content: flex-start; // Start from top
+      align-items: center;
+
+      .nav {
+        width: 90%;
+        height: 80%; // Adjusted height
+        margin: 1rem auto;
+        background-color: #9cbaf3;
       }
     }
 
-    section {
-      width: 100%;
-      margin: 0.3rem auto;
+    aside {
+      padding: 0;
+      section {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+        background-color: #a4caaf;
+      }
     }
-  }
 
-  // Small tablets (481px - 550px)
-  @media screen and (min-width: 481px) and (max-width: 550px) {
-    width: 95%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
-    grid-template-areas:
-      "logo"
-      "header"
-      "article"
-      "aside"
-      "footer";
-    gap: 0.2rem;
-  }
+    .video-responsive {
+      width: 100%;
+      margin: 0 auto 1rem;
+      padding-bottom: 56.25%;
+    }
 
-  // Tablets (551px - 768px)
-  @media screen and (min-width: 551px) and (max-width: 768px) {
-    width: 90%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
-    gap: 0.2rem;
-  }
+    .picContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 0 10px;
 
-  // Small laptops (769px - 1024px)
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    width: 85%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
-    gap: 0.2rem;
-  }
+      .small_pic {
+        width: 80px; // Fixed width instead of percentage
+        height: 45px; // Added fixed height
+        margin: 0;
 
-  // Laptops and desktops (1025px - 1280px)
-  @media screen and (min-width: 1025px) {
-    width: 80%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
-    gap: 0.2rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    footer {
+      margin: 0;
+      padding: 1rem;
+    }
   }
 }
