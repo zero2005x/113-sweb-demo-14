@@ -26,6 +26,26 @@ function showClassDemo(item) {
       // Load the blog demo page
       p.innerHTML = `<iframe src='./demo/w07_showdemo_14/w07_showdemo_14.html' width="100%" height="100%"></iframe>`
       break
+    //w11_navbar_14
+    case 'w11_navbar_14':
+      // Load the blog demo page
+      p.innerHTML = `<iframe src='./demo/w11_navbar_14/index.html' width="100%" height="100%"></iframe>`
+      break
+
+    case 'w12_landing_14':
+      // Load the blog demo page
+      p.innerHTML = `<iframe src='./demo/w12_landing_14/index.html' width="100%" height="100%"></iframe>`
+      break
+
+    case 'w12_navbar_14':
+      // Load the blog demo page
+      p.innerHTML = `<iframe src='./demo/w12_navbar_14/index.html' width="100%" height="100%"></iframe>`
+      break
+
+    case 'w13_multipage_14':
+      // Load the blog demo page
+      p.innerHTML = `<iframe src='./demo/w13_multipage_14/index.html' width="100%" height="100%"></iframe>`
+      break
 
     case 'tictoctoe':
       // Load the blog demo page
