@@ -1,0 +1,51 @@
+.final_panel {
+  background-color: hsl(240, 100%, 97%);
+  border: #ddd;
+
+  .pricing-plan {
+    width: 90%;
+    height: 90%;
+    min-width: 100px;
+    margin: 0 auto;
+    display: flexbox;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pricing-img {
+    width: 80%;
+    height: 80%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+}
+
+.pricing-footer {
+  color: #016ff9;
+}
+
+@media (min-width: 800px) {
+  .final_panel {
+    background-color: #f1f1ff;
+    border: #ddd;
+    display: grid;
+    grid-template-columns: 3fr;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    .pricing-img {
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+    .pricing-plan {
+      width: 90%;
+      height: 90%;
+      min-width: 100px;
+      margin: 0 auto;
+      display: flexbox;
+      grid-template-columns: repeat(3, 1fr);
+      margin: auto auto;
+    }
+  }
+  .pricing-footer {
+    color: #016ff9;
+  }
+}
